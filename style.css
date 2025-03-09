@@ -77,6 +77,22 @@ html{
     margin-top: 15px;
     margin-left: 40px;
 }
+#download{
+    margin-left: 40px;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#download:hover{
+    color: white;
+    background-color: red;
+}
 .image{
     width: 20%;
     height: 20%;
