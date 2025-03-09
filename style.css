@@ -51,7 +51,7 @@ html{
 .link1{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
 }
 .link1:hover{
@@ -63,7 +63,7 @@ html{
 }
 #username{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 40px;
 }
 .fname{
@@ -73,7 +73,7 @@ html{
 #user-description{
     color: white;
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 15px;
     margin-left: 40px;
 }
@@ -86,7 +86,7 @@ html{
     text-decoration: none;
     border-radius: 8px;
     margin-top: 8px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
 }
 #download:hover{
