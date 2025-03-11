@@ -7,6 +7,8 @@
     <title>Ullas Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,21 +16,31 @@
         <!-- Navigation bar -->
         <nav>
             <!-- image logo -->
-            <a href=""><img class="logoo" src="./images/Logoo.png" alt="no image"></a>
+            <!-- <a href=""><img class="logoo" src="./images/Logoo.png" alt="no image"></a> -->
+            <div id="logo">Port<span>folio</span></div>
             <ul>
                 <li class="list-items home"><a class="link1" href="#Home">Home</a></li>
                 <li class="list-items about"><a class="link1" href="">About</a></li>
                 <li class="list-items Skills"><a class="link1" href="">Skills</a></li>
+                <li class="list-items Skills"><a class="link1" href="">Education</a></li>
+                <li class="list-items Skills"><a class="link1" href="">Works</a></li>
                 <li class="list-items contact"><a class="link1" href="">Contact</a></li>
             </ul>
+            <a class="download hover:border hover:border-white-200" href="./images/Ullas K Raj Resume.pdf"
+                download="">Download CV</a>
         </nav>
 
         <!-- Home Content -->
         <section id="Home">
             <div class="home-content-container">
                 <div class="home-content">
-                    <h1 id="username" class="animate__animated animate__backInLeft">I'm <span class="fname ">Ullas K
-                            Raj</span></h1>
+                    <!-- <h1 id="username" class="animate__animated animate__backInLeft">I'm <span class="fname ">Ullas K
+                            Raj</span></h1> -->
+
+                    <!-- <span class="Myname">Hello, I'm</span><br><span>Ullas K Raj</span> -->
+                    <h3>Hello, I'm</h3>
+                    <h1>Ullas K Raj</h1>
+                    <h2>And I'm a <span class="highlight" id="animatedText"></span></h2>
                     <p id="user-description" class="Home-body">Results-driven Software Analyst with extensive experience
                         in
                         system <br>analysis and business applications.<br> Skilled
@@ -36,13 +48,49 @@
                         business needs.
                         <br>Strong communication, leadership, and problem-solving abilities.
                     </p>
-                    <a id="download" href="./images/Ullas K Raj Resume.pdf" download="">Download CV</a>
+                    <a class="hire hover:border hover:border-white-200" href="">Hire Me</a>
+                    <a class="ContactMe hover:border hover:border-white-200" href="#">Contact Me</a>
                 </div>
                 <div class="home-image animate__animated animate__backInRight">
                     <img class="image" src="./images/me.png" alt="no image">
                 </div>
             </div>
+
+            <!-- Skill animation -->
+            <!-- <div class="Animation">
+                <div class="tag-list">
+                    <div class="inner">
+                        <div class="tag">
+                            <span>#</span>CSS
+                        </div>
+                        <div class="tag">
+                            <span>#</span>HTML
+                        </div>
+                        <div class="tag">
+                            <span>#</span>Bootstrap
+                        </div>
+                        <div class="tag">
+                            <span>#</span>Tailwind
+                        </div>
+                        <div class="tag">
+                            <span>#</span>Javascript
+                        </div>
+                        <div class="tag">
+                            <span>#</span>Node Js
+                        </div>
+                        <div class="tag">
+                            <span>#</span>React
+                        </div>
+                        <div class="tag">
+                            <span>#</span>Angular
+                        </div>
+                    </div>
+                    <div class="fade"></div>
+                </div>
+            </div> -->
+
         </section>
+
 
         <!-- About -->
         <section>
@@ -52,5 +100,33 @@
     </div>
 
 </body>
+<script>
+    const roles = ["Software Developer","Software Analyst", "Frontend Developer","Web Developer","Python Developer"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    const animatedText = document.getElementById("animatedText");
 
+    function typeEffect() {
+        if (charIndex < roles[roleIndex].length) {
+            animatedText.textContent += roles[roleIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, 100);
+        } else {
+            setTimeout(eraseEffect, 2000);
+        }
+    }
+
+    function eraseEffect() {
+        if (charIndex > 0) {
+            animatedText.textContent = roles[roleIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseEffect, 50);
+        } else {
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(typeEffect, 500);
+        }
+    }
+
+    typeEffect();
+</script>
 </html>
