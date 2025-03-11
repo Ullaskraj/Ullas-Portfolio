@@ -8,7 +8,7 @@
 #Container{
     background-image: url(./images/BackgroundImage.jpg);
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
 }
 nav{
@@ -19,6 +19,7 @@ nav{
     margin-left: 0px;
     margin-top: 0px;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(2px);
 }
@@ -70,16 +71,18 @@ html{
 
 }
 #Home{
-    margin-top: 150px;
+    margin-top: 140px;
 }
+
+
+
+
 #username{
     color: white;
     font-size: 10px;
     margin-left: 40px;
 }
-.Myname{
-    
-}
+
 
 .fname{
     color: red;
