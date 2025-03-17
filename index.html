@@ -14,26 +14,30 @@
 
 <body>
     <!-- Construction banner -->
-    <div id="construction-banner">
+     <div id="construction-banner">
         <p>🚧 Site Under Maintenance 🚧</p>
         <button id="close-banner"><i class="fa-solid fa-screwdriver-wrench"></i> Alert</button>
     </div>
     <div id="Container">
-        <!-- Navigation bar -->
-        <nav>
-            <!-- image logo -->
-            <!-- <a href=""><img class="logoo" src="./images/Logoo.png" alt="no image"></a> -->
+         <!-- Navigation bar -->
+        <nav class="Nav-resp">
             <div id="logo">Port<span>folio</span></div>
-            <ul>
-                <li class="list-items home"><a class="link1" href="#Home">Home</a></li>
-                <li class="list-items about"><a class="link1" href="">About</a></li>
-                <li class="list-items Skills"><a class="link1" href="">Skills</a></li>
-                <li class="list-items Skills"><a class="link1" href="">Education</a></li>
-                <li class="list-items Skills"><a class="link1" href="">Works</a></li>
-                <li class="list-items contact"><a class="link1" href="">Contact</a></li>
-            </ul>
-            <a class="download hover:border hover:border-white-200" href="./images/Ullas K Raj Resume.pdf"
-                download="">Download CV</a>
+            <input type="checkbox" id="Check" class="checkboxclass">
+            <label for="Check" class="menu">
+                <i class="fa-solid fa-bars" id="MenuIcon"></i>
+            </label>
+            <div class="Ul-resp">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <a class="download-resp" href="./images/Ullas K Raj Resume.pdf" download>Download CV</a>
+                </ul>
+            </div>
+            <!-- <a class="download-resp" href="./images/Ullas K Raj Resume.pdf" download>Download CV</a> -->
         </nav>
 
         <!-- Home Content -->
@@ -45,8 +49,8 @@
 
                     <!-- <span class="Myname">Hello, I'm</span><br><span>Ullas K Raj</span> -->
                     <h3>Hello, I'm</h3>
-                    <h1>Ullas K Raj</h1>
-                    <h2>And I'm a <span class="highlight" id="animatedText"></span></h2>
+                    <h1 class="Fname">Ullas K Raj</h1>
+                    <h2 class="Designation">And I'm a <span class="highlight" id="animatedText"></span></h2>
                     <p id="user-description" class="Home-body">Results-driven Software Analyst with extensive experience
                         in
                         system <br>analysis and business applications.<br> Skilled
@@ -54,8 +58,11 @@
                         business needs.
                         <br>Strong communication, leadership, and problem-solving abilities.
                     </p>
-                    <a class="hire hover:border hover:border-white-200" href="">Hire Me</a>
-                    <a class="ContactMe hover:border hover:border-white-200" href="#">Contact Me</a>
+                    <a class="hire hover:border hover:border-white-200"
+                        href="mailto:ullaskraj24@gmail.com?subject=Job%20Opportunity&body=Hello%20Ullas K Raj,"
+                        target="_blank">Hire Me</a>
+                    <a class="ContactMe hover:border hover:border-white-200" href="https://wa.me/919562399077"
+                        target="_blank">Contact Me</i></a>
                 </div>
                 <div class="home-image animate__animated animate__backInRight">
                     <img class="image" src="./images/me.png" alt="no image">
@@ -98,12 +105,18 @@
         </section>
 
 
-        <!-- About -->
-        <section>
 
-        </section>
+        <!-- About
+        <Section id="About">
+            <div class="About">
+                <h1>About me</h1>
+                <span>Introduction</span>
+            </div>
+        </Section>
 
-    </div>
+    </div> -->
+
+
 
 </body>
 <script>
