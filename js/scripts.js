@@ -80,7 +80,7 @@
 
 
 // Designation animation start
-    const roles = ["Software Developer", "Software Analyst", "Frontend Developer", "Web Developer", "Python Developer"];
+    const roles = ["Project Coordinator", "Software Analyst", "Software Developer", "Frontend Developer", "Web Developer", "Python Developer"];
     let roleIndex = 0;
     let charIndex = 0;
     const animatedText = document.getElementById("animatedText");

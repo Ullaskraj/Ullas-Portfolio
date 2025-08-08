@@ -1275,7 +1275,7 @@ a:hover.back-to-top {
 	
 	.split .area-2 {
 		height: 100%;
-		width: 50%;
+		/* width: 50%; */
 		display: inline-block;
 		vertical-align: top;
 	}
